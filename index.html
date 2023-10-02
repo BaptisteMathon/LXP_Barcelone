@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="bodyClass">
+	
+	<main>
+		<div class="divImg">
+			<img width="500px" src="haltere.png" alt="Dumbbell">
+		</div>
+
+		<div class="border-comment">
+			<p class="CommentsDiv">Comments:</p>
+			<div id="Comments"></div>
+			<div class="input-comment">
+				<label for="texte">Add a comment:</label>
+				<div>
+					<input type="text" id="texte">
+					<button type="button" onclick="Submit()">Submit</button>
+				</div>
+			</div>
+		</div>
+		<p id="test" style="display: none;"></p>
+	</main>
+	
+	
+	<script>
+		// fetch("http://localhost:3000/comments",{
+		// 	method: "POST",
+		// 	headers: {"Content-Type": "application/json"},
+		// 	body: JSON.stringify({"id": 2, "title": "json-server", "author": "typicode"})
+		// }).then(function(
+		// 	response
+		// ){
+		// 	console.log(response)
+		// 	return response.json()
+		// }).then(function(
+		// 	data
+		// ){
+		// 	console.log(data)
+		// })
+
+		fetch("http://localhost:3000/comments").then(function(response){
+			return response.json()
+		}).then(function(data){
+			for(let i = 0; i < data.length; i++){
+				let newP = document.createElement("p")
+				newP.textContent = data[i]["content"];
+
+				let newButton = document.createElement("img")
+				newButton.src = "téléchargement.png"
+				newButton.style.cursor = "pointer"
+				newButton.style.width = "25px"
+				newButton.style.marginLeft = "15px"
+				newButton.setAttribute("onclick", `Delete(${data[i]["id"]})`)
+
+				let newDiv = document.createElement("div")
+				newDiv.style.display = "flex"
+				newDiv.style.margin = "15px 0"
+				newDiv.append(newP)
+				newDiv.append(newButton)
+				newDiv.style.alignItems = "center"
+				newDiv.style.borderBottom = "1px solid gray"
+
+
+				document.getElementById("Comments").append(newDiv);
+				console.log(newButton)
+				if(i == data.length-1){
+					let ids = data[i]["id"]
+					console.log(ids)
+					document.getElementById("test").innerText = ids
+				}
+			}
+		})
+
+		function Submit(){
+			let comment = document.getElementById("texte").value;
+			console.log(document.getElementById("test"))
+			fetch("http://localhost:3000/comments", {
+				method: "POST",
+				headers: {"Content-Type": "application/json"},
+				body: JSON.stringify({"id": document.getElementById("test").value+1, "content": comment})
+			}).then(function(response){
+			}).then(function(data){
+				location.reload()
+			})
+		}
+
+		function Delete(idToDelete){
+			fetch(`http://localhost:3000/comments/${idToDelete}`, {
+				method: "DELETE"
+			}).then(function(response){
+			}).then(function(data){
+				location.reload()
+			})
+		}
+		
+		
+	</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const URL = "http://localhost:3000/products";
+const URL = "http://localhost:3000/SportsEquipment";
 fetch(URL).then(function(response){
     return response.json();
 }).then(function(data){

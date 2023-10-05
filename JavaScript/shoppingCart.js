@@ -12,6 +12,7 @@ fetch(URL).then(function(response){
         newTd1Img.src = data[i]["img"]
         newTd1Img.className = "imgShop"
         newTd1.append(newTd1Img)
+        newTd1.className = "imgtd"
         let newTd2 = document.createElement("td")
         newTd2.innerText = data[i]["products"]
         let newTd3 = document.createElement("td")
@@ -24,6 +25,7 @@ fetch(URL).then(function(response){
         newTd5.style.display = "flex"
         newTd5.style.justifyContent = "center"
         newTd5.style.padding = "60px 5px"
+        newTd5.style.backgroundColor = "grey"
 
         newTr.append(newTd1)
         newTr.append(newTd2)
@@ -31,6 +33,11 @@ fetch(URL).then(function(response){
         newTr.append(newTd4)
         newTr.append(newTd5)
 
+        if(i % 2 == 0){
+            newTr.style.backgroundColor = "#ff7f27"
+        } else {
+            newTr.style.backgroundColor = "#fda400a9"
+        }
         document.getElementById("tbody").append(newTr)
     }
     document.getElementById("finalPrice").innerText = finalPrice + "€"

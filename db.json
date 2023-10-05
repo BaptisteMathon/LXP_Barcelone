@@ -1,179 +1,125 @@
 {
-	"SportsEquipment": [
-	{
-		"id": 1,
-		"name_product": "Soccer ball",
-		"price": 15,
-		"img": "Img/BallonFoot.png"
-	},
-	{
-		"id": 2,
-		"name_product": "Tennis racket",
-		"price": 50,
-		"img": "Img/raquette.png"
-	},
-	{
-		"id": 3,
-		"name_product": "Dumbbells",
-		"price": 35,
-		"img": "Img/haltere.png"
-	},
-	{
-		"id": 4,
-		"name_product": "Jump rope",
-		"price": 10,
-		"img": "Img/CordeASaute.png"
-	},
-	{
-		"id": 5,
-		"name_product": "Resistance bands",
-		"price": 10,
-		"img": "Img/bandeResistance.png"
-	},
-	{
-		"id": 6,
-		"name_product": "Yoga mat",
-		"price": 25,
-		"img": "Img/Yoga.png"
-	},
-	{
-		"id": 7,
-		"name_product": "Bicycle helmet",
-		"price": 35,
-		"img": "Img/casque.png"
-	},
-	{
-		"id": 8,
-		"name_product": "Boxing gloves",
-		"price": 50,
-		"img": "Img/gantBoxe.png"
-	}
-	]
-}
-{
-	"ExerciseMachines": [
-	{
-		"id": 1,
-		"name_product": "Treadmill",
-		"price": 900,
-		"img": "Img/machine1.png"
-	},
-	{
-		"id": 2,
-		"name_product": "Exercise bike",
-		"price": 500,
-		"img": "Img/machine2.png"
-	},
-	{
-		"id": 3,
-		"name_product": "Rowing machine",
-		"price": 550,
-		"img": "Img/machine3.png"
-	},
-	{
-		"id": 4,
-		"name_product": "Weightlifting machine",
-		"price": 1150,
-		"img": "Img/machine4.png"
-	},
-	{
-		"id": 5,
-		"name_product": "Elliptical trainer",
-		"price": 830,
-		"img": "Img/machine5.png"
-	},
-	{
-		"id": 6,
-		"name_product": "Smith machine",
-		"price": 1100,
-		"img": "Img/machine6.png"
-	},
-	{
-		"id": 7,
-		"name_product": "Step climber machine",
-		"price": 580,
-		"img": "Img/machine7.png"
-	},
-	{
-		"id": 8,
-		"name_product": "Cable crossover machine",
-		"price": 2200,
-		"img": "Img/machine8.png"
-	}
-	]
-}
-
-{
-  "products": [
+  "SportsEquipment": [
     {
       "id": 1,
-      "name_product": "Dumbbell",
-      "price": 50,
-      "img": "Img/haltere.png"
+      "name_product": "Fitness ball",
+      "price": 20,
+      "img": "Img/ballonFit.png"
     },
     {
       "id": 2,
-      "name_product": "Yoga mats",
-      "price": 30,
-      "img": "Img/Yoga.png"
+      "name_product": "Weight bar",
+      "price": 25,
+      "img": "Img/BarreMuscu.png"
     },
     {
       "id": 3,
-      "name_product": "Exercise bike",
-      "price": 300,
-      "img": "Img/velo.png"
+      "name_product": "Dumbbells",
+      "price": 35,
+      "img": "Img/haltere.png"
     },
     {
       "id": 4,
-      "name_product": "Resistance bands",
-      "price": 25,
-      "img": "Img/resitance.png"
+      "name_product": "Jump rope",
+      "price": 10,
+      "img": "Img/CordeASaute.png"
     },
     {
       "id": 5,
-      "name_product": "Jump rope",
+      "name_product": "Resistance bands",
       "price": 10,
-      "img": "Img/corde.png"
+      "img": "Img/bandeResistance.png"
     },
     {
       "id": 6,
-      "name_product": "Fitness ball",
-      "price": 20,
-      "img": "Img/ballon.png"
+      "name_product": "Yoga mat",
+      "price": 25,
+      "img": "Img/Yoga.png"
     },
     {
       "id": 7,
-      "name_product": "Tennis racket",
-      "price": 110,
-      "img": "Img/raquette.png"
+      "name_product": "Weight",
+      "price": 35,
+      "img": "Img/PoidsHaltere.png"
     },
     {
       "id": 8,
-      "name_product": "Treadmills",
+      "name_product": "Boxing bag",
+      "price": 50,
+      "img": "Img/SacBox.png"
+    }
+  ],
+  "ExerciseMachines": [
+    {
+      "id": 1,
+      "name_product": "Treadmill",
       "price": 900,
-      "img": "Img/tapis.png"
+      "img": "Img/machine1.png"
     },
     {
-      "id": 9,
-      "name_product": "Boxing gloves",
-      "price": 50,
-      "img": "Img/gants.png"
+      "id": 2,
+      "name_product": "Exercise bike",
+      "price": 500,
+      "img": "Img/machine2.png"
+    },
+    {
+      "id": 3,
+      "name_product": "Rowing machine",
+      "price": 550,
+      "img": "Img/machine3.png"
+    },
+    {
+      "id": 4,
+      "name_product": "Weightlifting ",
+      "price": 1150,
+      "img": "Img/machine4.png"
+    },
+    {
+      "id": 5,
+      "name_product": "Elliptical trainer",
+      "price": 830,
+      "img": "Img/machine5.png"
+    },
+    {
+      "id": 6,
+      "name_product": "Smith machine",
+      "price": 1100,
+      "img": "Img/machine6.png"
+    },
+    {
+      "id": 7,
+      "name_product": "Step climber ",
+      "price": 580,
+      "img": "Img/machine7.png"
+    },
+    {
+      "id": 8,
+      "name_product": "Cable crossover ",
+      "price": 2200,
+      "img": "Img/machine8.png"
     }
   ],
   "Card": [
     {
       "id": 1,
-      "products": "Dumbbell",
+      "products": "Jump rope",
       "quantity": 3,
-      "img": "Img/haltere.png",
-      "price": 50
+      "img": "Img/CordeASaute.png",
+      "price": 10
     },
     {
       "id": 2,
-      "products": "Treadmills",
-      "quantity": 1,
-      "img": "Img/tapis.png",
-      "price": 900
+      "products": "Bicycle helmet",
+      "quantity": 2,
+      "img": "Img/casque.png",
+      "price": 35
+    },
+    {
+      "id": 3,
+      "products": "Step climber machine",
+      "quantity": 2,
+      "img": "Img/machine7.png",
+      "price": 580
     }
   ]
 }

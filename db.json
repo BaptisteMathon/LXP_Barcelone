@@ -101,25 +101,11 @@
   ],
   "Card": [
     {
-      "id": 3,
+      "id": 1,
       "products": "Weight bar",
       "quantity": 1,
       "img": "Img/BarreMuscu.png",
       "price": 25
-    },
-    {
-      "id": 4,
-      "products": "Fitness ball",
-      "quantity": 1,
-      "img": "Img/ballonFit.png",
-      "price": 20
-    },
-    {
-      "id": 5,
-      "products": "Dumbbells",
-      "quantity": 1,
-      "img": "Img/haltere.png",
-      "price": 35
     }
   ]
 }

@@ -101,25 +101,25 @@
   ],
   "Card": [
     {
-      "id": 1,
-      "products": "Jump rope",
-      "quantity": 3,
-      "img": "Img/CordeASaute.png",
-      "price": 10
-    },
-    {
-      "id": 2,
-      "products": "Bicycle helmet",
-      "quantity": 2,
-      "img": "Img/casque.png",
-      "price": 35
-    },
-    {
       "id": 3,
-      "products": "Step climber machine",
-      "quantity": 2,
-      "img": "Img/machine7.png",
-      "price": 580
+      "products": "Weight bar",
+      "quantity": 1,
+      "img": "Img/BarreMuscu.png",
+      "price": 25
+    },
+    {
+      "id": 4,
+      "products": "Fitness ball",
+      "quantity": 1,
+      "img": "Img/ballonFit.png",
+      "price": 20
+    },
+    {
+      "id": 5,
+      "products": "Dumbbells",
+      "quantity": 1,
+      "img": "Img/haltere.png",
+      "price": 35
     }
   ]
 }

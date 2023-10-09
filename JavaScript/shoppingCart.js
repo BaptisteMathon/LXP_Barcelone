@@ -24,7 +24,7 @@ fetch(URL).then(function(response){
         newTd5.innerHTML = `<button onclick="AddQuantity(${data[i]["id"]}, ${data[i]["quantity"]}, ${data[i]["price"]}, '${data[i]["products"]}', '${data[i]["img"]}')" class="buttonSC" style="padding: 0 3px")">+</button><img src="Img/del.png" alt="Delete" width="20px" style="cursor:pointer;" onclick="DeleteProd(${data[i]["id"]})"><button class="buttonSC" style="padding: 0 5px" onclick="LessQuantity(${data[i]["id"]}, ${data[i]["quantity"]}, ${data[i]["price"]}, '${data[i]["products"]}', '${data[i]["img"]}')">-</button>`
         newTd5.style.display = "flex"
         newTd5.style.justifyContent = "center"
-        newTd5.style.padding = "60px 5px"
+        newTd5.style.padding = "75px 5px"
         newTd5.style.backgroundColor = "grey"
 
         newTr.append(newTd1)
@@ -36,7 +36,7 @@ fetch(URL).then(function(response){
         if(i % 2 == 0){
             newTr.style.backgroundColor = "#ff7f27"
         } else {
-            newTr.style.backgroundColor = "#fda400a9"
+            newTr.style.backgroundColor = "#cacaca"
         }
         document.getElementById("tbody").append(newTr)
     }

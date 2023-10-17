@@ -20,4 +20,3 @@ $ npm start
 $ cd ./  (PATH to the database repository)
 $ json-server --watch db.json
 ```
-![download](https://github.com/BaptisteMathon/LXP_Barcelone/assets/103061783/b3641b3c-3a6d-4401-8fca-b6d457d1d756)

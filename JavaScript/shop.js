@@ -2,7 +2,7 @@ const URL = "http://localhost:3000/SportsEquipment";
 fetch(URL).then(function(response){
     return response.json();
 }).then(function(data){
-    console.log(data)
+    // console.log(data)
     for(let i = 0; i < data.length; i++){
         
         let newDiv = document.createElement("div")
@@ -26,11 +26,26 @@ fetch(URL).then(function(response){
         newDiv.append(newImg)
         newDiv.append(newProduct)
         newDiv.append(newPrice)
-        newDiv.append(newButton)
+
+        fetch("http://localhost:3000/Card").then(function(response2){
+            return response2.json();
+        }).then(function(data2){
+            console.log(data2)
+            let count = 0
+            for(let j = 0; j < data2.length; j++){
+                if(data2[j]["products"] == data[i]["name_product"]){
+                    count = 1
+                }
+            }
+            if(count == 0){
+                newDiv.append(newButton)
+            }
+        })
+        
 
         document.getElementById("our-products").append(newDiv)
 
-        console.log(newDiv)
+        // console.log(newDiv)
     }
 })
 
@@ -38,7 +53,7 @@ const URL2 = "http://localhost:3000/ExerciseMachines";
 fetch(URL2).then(function(response){
     return response.json();
 }).then(function(data){
-    console.log(data)
+    // console.log(data)
     for(let i = 0; i < data.length; i++){
         
         let newDiv = document.createElement("div")
@@ -62,11 +77,25 @@ fetch(URL2).then(function(response){
         newDiv.append(newImg)
         newDiv.append(newProduct)
         newDiv.append(newPrice)
-        newDiv.append(newButton)
+        
+        fetch("http://localhost:3000/Card").then(function(response2){
+            return response2.json();
+        }).then(function(data2){
+            console.log(data2)
+            let count = 0
+            for(let j = 0; j < data2.length; j++){
+                if(data2[j]["products"] == data[i]["name_product"]){
+                    count = 1
+                }
+            }
+            if(count == 0){
+                newDiv.append(newButton)
+            }
+        })
 
         document.getElementById("our-products2").append(newDiv)
 
-        console.log(newDiv)
+        // console.log(newDiv)
     }
 })
 

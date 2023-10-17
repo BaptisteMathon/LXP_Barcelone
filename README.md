@@ -1,6 +1,5 @@
 # LXP_Barcelone
 
-***
 We sell sport products, to allow people to substract travel time instead going to the gym
 
 ***

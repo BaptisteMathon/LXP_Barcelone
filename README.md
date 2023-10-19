@@ -15,7 +15,7 @@ $ npm install
 $ npm start
 ```
 
-#### 3 - Start the database for all informations
+#### 3 - Start the database
 ```
 $ cd ./  (PATH to the database repository)
 $ json-server --watch db.json
